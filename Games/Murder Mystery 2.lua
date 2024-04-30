@@ -1,5 +1,8 @@
 --[[
     R3TH PRIV MURDER MYSTERY 2 SOURCE
+    
+    You cant use any of the below unless given permission.
+    .gg/pethicial
 
     Credits:
         pethicial
@@ -7,53 +10,6 @@
 
 --------------------------------------------------------------------------------------R3THPRIV----------------------------------------------------------------------------------------
 repeat wait() until game:IsLoaded()
-
-if zac5mDuh2AXjsBebYVg6ZSMEf4yxQkw8dRLNGKHF7J9CPT3qWp ~= true then
-    print("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    game.Players.LocalPlayer:Kick("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    local function loadscript()
-        while true do
-            loadscript()
-        end
-    end
-
-    while true do
-        spawn(loadscript)
-    end
-    return
-end
-
-if WVryGeXr38ZZtdJWtrBtyeEKdm9Kkweaxm7tnUpuCcH835AQN2aLxV2NeG76kYZuWnCZz4yRr == nil then
-    print("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    game.Players.LocalPlayer:Kick("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    local function loadscript()
-        while true do
-            loadscript()
-        end
-    end
-
-    while true do
-        spawn(loadscript)
-    end
-    return
-end
-
-if T6FVH3SyPgXtYuZAzQCRJU7Ms2m5b9rGNLhkcnevfqDdKxB then
-    print("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    game.Players.LocalPlayer:Kick("[ R3TH PRIV ]: Stop attempting to directly execute the script or you will be banned.")
-    local function loadscript()
-        while true do
-            loadscript()
-        end
-    end
-
-    while true do
-        spawn(loadscript)
-    end
-    return
-end
-
-getgenv().T6FVH3SyPgXtYuZAzQCRJU7Ms2m5b9rGNLhkcnevfqDdKxB = true
 
 for _,obj in next, game.Players.LocalPlayer.Backpack.Toys:GetChildren() do
     if obj.Name == "SprayPaint" then
@@ -86,7 +42,8 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/OtherScripts/VenyxUI.lua"))()
-local R3TH = library.new("R3TH PRIV                                                                                .gg/pethicial", 5013109572)
+local R3TH = library.new("R3TH PRIV                                                                             .gg/pethicial", 5013109572)
+
 
 local Universal = R3TH:addPage("Universal", 5012540623)
 local Player = Universal:addSection("Player")
@@ -114,19 +71,19 @@ local Target = Target0:addSection("Target")
 local LoopTarget = Target0:addSection("Loop Target")
 local FE = Target0:addSection("FE")
 local Antijoin = Target0:addSection("Anti Join")
-local MultiKill = R3TH:addPage("Multi Destroy", 5012538583)
-local Mutlikill1 = MultiKill:addSection("Mutli Destroy 1")
-local Mutlikill2 = MultiKill:addSection("Mutli Destroy 2")
-local Mutlikill3 = MultiKill:addSection("Mutli Destroy 3")
-local Mutlikill4 = MultiKill:addSection("Mutli Destroy 4")
-local Mutlikill5 = MultiKill:addSection("Mutli Destroy 5")
-local Mutlikill6 = MultiKill:addSection("Mutli Destroy 6")
-local Mutlikill7 = MultiKill:addSection("Mutli Destroy 7")
-local Mutlikill8 = MultiKill:addSection("Mutli Destroy 8")
-local Mutlikill9 = MultiKill:addSection("Mutli Destroy 9")
-local Mutlikill10 = MultiKill:addSection("Mutli Destroy 10")
-local Mutlikill11 = MultiKill:addSection("Mutli Destroy 11")
-local Mutlikill12 = MultiKill:addSection("Mutli Destroy 12")
+local MultiKill = R3TH:addPage("Multi Kill", 5012538583)
+local Mutlikill1 = MultiKill:addSection("Mutli Kill 1")
+local Mutlikill2 = MultiKill:addSection("Mutli Kill 2")
+local Mutlikill3 = MultiKill:addSection("Mutli Kill 3")
+local Mutlikill4 = MultiKill:addSection("Mutli Kill 4")
+local Mutlikill5 = MultiKill:addSection("Mutli Kill 5")
+local Mutlikill6 = MultiKill:addSection("Mutli Kill 6")
+local Mutlikill7 = MultiKill:addSection("Mutli Kill 7")
+local Mutlikill8 = MultiKill:addSection("Mutli Kill 8")
+local Mutlikill9 = MultiKill:addSection("Mutli Kill 9")
+local Mutlikill10 = MultiKill:addSection("Mutli Kill 10")
+local Mutlikill11 = MultiKill:addSection("Mutli Kill 11")
+local Mutlikill12 = MultiKill:addSection("Mutli Kill 12")
 local Settings0 = R3TH:addPage("Settings", 5012544372)
 local Settings = Settings0:addSection("Settings")
 local Credits = Settings0:addSection("Credits")
@@ -1467,22 +1424,18 @@ Target:addDropdown("Select Player", flinglist, function(targetName)
     targetUsername = targetName
 end)
 
-LoopTarget:addToggle("Loop Destroy Player", false, function(loopreset)
+LoopTarget:addToggle("Loop Reset Player", false, function(Value)
     SprayPaintNotif()
-    loopresetplayer = loopreset
+    loopresetplayer = Value
     while loopresetplayer do
         function loopresetplayerfix()
         if targetUsername == "All" then
             for i,v in pairs(game.Players:GetChildren()) do
-                function loopresetallfix()
                 if v.Name ~= game.Players.LocalPlayer.Name then
                     resetallplayers = players:FindFirstChild(v.Name)
                     game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (resetallplayers.Character.HumanoidRootPart), CFrame.new(8999999488, -8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
                 end
                 wait()
-            end
-            wait()
-            pcall(loopresetallloopfix)
             end
         else
             targetPlayer = players:FindFirstChild(targetUsername)
@@ -1495,33 +1448,6 @@ LoopTarget:addToggle("Loop Destroy Player", false, function(loopreset)
     end
 end)
 
-LoopTarget:addToggle("Loop Trap Player", false, function(looptrap)
-    looptrapplayer = looptrap
-    while looptrapplayer do
-        function looptrapplayerfix()
-        if targetUsername == "All" then
-            for i,v in pairs(game.Players:GetChildren()) do
-                function looptrapallloopfix()
-                if v.Name ~= game.Players.LocalPlayer.Name then
-                    looptrapallplayers = players:FindFirstChild(v.Name)
-                    game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(looptrapallplayers.Character.HumanoidRootPart.Position))
-                    wait()
-                end
-            end
-            wait()
-            pcall(looptrapallloopfix)
-            end
-        else
-            targetPlayer = players:FindFirstChild(targetUsername)
-            game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(targetPlayer.Character.HumanoidRootPart.Position))
-            wait()
-        end
-    end
-    wait()
-    pcall(looptrapplayerfix)
-    end
-end)
-
 LoopTarget:addToggle("Loop Void Player", false, function(loopvoid)
     SprayPaintNotif()
     loopvoidplayer = loopvoid
@@ -1529,14 +1455,10 @@ LoopTarget:addToggle("Loop Void Player", false, function(loopvoid)
         function loopvoidplayerfix()
         if targetUsername == "All" then
             for i,v in pairs(game.Players:GetChildren()) do
-                function loopvoidallloopfix()
                 if v.Name ~= game.Players.LocalPlayer.Name then
                     voidallplayers = players:FindFirstChild(v.Name)
                     game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(0, Enum.NormalId.Top, 2048, (voidallplayers.Character.HumanoidRootPart), CFrame.new(8999999488, 8999999488, 8999999488) * CFrame.Angles(-0, 0, -0))
                 end
-            end
-            wait()
-            pcall(loopvoidallloopfix)
             end
         else
             targetPlayer = players:FindFirstChild(targetUsername)
@@ -1546,6 +1468,61 @@ LoopTarget:addToggle("Loop Void Player", false, function(loopvoid)
     end
     wait()
     pcall(loopvoidplayerfix)
+    end
+end)
+
+LoopTarget:addToggle("Give Player Noclip", false, function(Value)
+    SprayPaintNotif()
+    GiveNoclipLoop = Value
+    while GiveNoclipLoop do
+        function GiveNoclipLoopPcall()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                function GiveNoclipAllPcall()
+                if v.Name ~= game.Players.LocalPlayer.Name then
+                    wait()
+                    nocliptarget = players:FindFirstChild(v.Name)
+                    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1, Enum.NormalId.Front, 2048, nocliptarget.Character.HumanoidRootPart, CFrame.new(0, -25000, 0))
+                    game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1, Enum.NormalId.Front, 2048, nocliptarget.Character.HumanoidRootPart, CFrame.new(0, 25000, 0))
+                end
+            end
+            wait()
+            pcall(GiveNoclipAllPcall)
+            end
+            wait(12)
+        else
+            nocliptarget = players:FindFirstChild(targetUsername)
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1, Enum.NormalId.Front, 2048, nocliptarget.Character.HumanoidRootPart, CFrame.new(0, -25000, 0))
+            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1, Enum.NormalId.Front, 2048, nocliptarget.Character.HumanoidRootPart, CFrame.new(0, 25000, 0))
+            wait()
+            wait(12)
+        end
+    end
+    wait()
+    pcall(GiveNoclipLoopPcall)
+    end
+end)
+
+LoopTarget:addToggle("Loop Trap Player", false, function(looptrap)
+    looptrapplayer = looptrap
+    while looptrapplayer do
+        function looptrapplayerfix()
+        if targetUsername == "All" then
+            for i,v in pairs(game.Players:GetChildren()) do
+                if v.Name ~= game.Players.LocalPlayer.Name then
+                    looptrapallplayers = players:FindFirstChild(v.Name)
+                    game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(looptrapallplayers.Character.HumanoidRootPart.Position))
+                    wait()
+                end
+            end
+        else
+            targetPlayer = players:FindFirstChild(targetUsername)
+            game:GetService("ReplicatedStorage"):WaitForChild("TrapSystem"):WaitForChild("PlaceTrap"):InvokeServer(CFrame.new(targetPlayer.Character.HumanoidRootPart.Position))
+            wait()
+        end
+    end
+    wait()
+    pcall(looptrapplayerfix)
     end
 end)
 
@@ -1580,37 +1557,6 @@ LoopTarget:addToggle("Rain Guns On Player", false, function(raingunsplayer)
     end
     wait()
     pcall(raingunsplayerloopfix)
-    end
-end)
-
-LoopTarget:addToggle("Blind Player", false, function(blindall)
-    SprayPaintNotif()
-    blindallloop = blindall
-    while blindallloop do
-        function blindallloopfix()
-        if targetUsername == "All" then
-            for i,v in pairs(game.Players:GetChildren()) do
-                blindallplayers = players:FindFirstChild(v.Name)
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Right, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Top, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Back, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Left, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Bottom, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-                game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Front, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            end
-        else
-            blindallplayers = players:FindFirstChild(targetUsername)
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Right, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Top, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Back, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Left, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Bottom, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-            game:GetService("Players").LocalPlayer.Character.SprayPaint.Remote:FireServer(1179108570, Enum.NormalId.Front, 2048, workspace.Lobby.Map.Part, CFrame.new(blindallplayers.Character.HumanoidRootPart.Position))
-        end
-        wait(0.5)
-    end
-    wait()
-    pcall(blindallloopfix)
     end
 end)
 
@@ -1712,7 +1658,7 @@ FE:addToggle("FE Penis", false, function(fepenis)
     end
 end)
 
-FE:addToggle("FE Cum", false, function(fecum)
+FE:addToggle("FE Cum Aura", false, function(fecum)
     SprayPaintNotif()
     fecumloop = fecum
     while fecumloop do
@@ -1786,7 +1732,7 @@ Mutlikill1:addDropdown("Select Player", playerlist, function(Name1)
     targetUsername1 = Name1
 end)
 
-Mutlikill1:addToggle("Loop Destroy Player", false, function(loopreset1)
+Mutlikill1:addToggle("Loop Reset Player", false, function(loopreset1)
     SprayPaintNotif()
     loopresetplayer1 = loopreset1
     while loopresetplayer1 do
@@ -1804,7 +1750,7 @@ Mutlikill2:addDropdown("Select Player", playerlist, function(Name2)
     targetUsername2 = Name2
 end)
 
-Mutlikill2:addToggle("Loop Destroy Player", false, function(loopreset2)
+Mutlikill2:addToggle("Loop Reset Player", false, function(loopreset2)
     SprayPaintNotif()
     loopresetplayer2 = true
     while loopresetplayer2 do
@@ -1823,7 +1769,7 @@ Mutlikill3:addDropdown("Select Player", playerlist, function(Name3)
 	print("Selected", Name3)
 end)
 
-Mutlikill3:addToggle("Loop Destroy Player", false, function(loopreset3)
+Mutlikill3:addToggle("Loop Reset Player", false, function(loopreset3)
     SprayPaintNotif()
     loopresetplayer3 = loopreset3
     while loopresetplayer3 do
@@ -1841,7 +1787,7 @@ Mutlikill4:addDropdown("Select Player", playerlist, function(Name4)
     targetUsername4 = Name4
 end)
 
-Mutlikill4:addToggle("Loop Destroy Player", false, function(loopreset4)
+Mutlikill4:addToggle("Loop Reset Player", false, function(loopreset4)
     SprayPaintNotif()
     loopresetplayer4 = loopreset4
     while loopresetplayer4 do
@@ -1859,7 +1805,7 @@ Mutlikill5:addDropdown("Select Player", playerlist, function(Name5)
     targetUsername5 = Name5
 end)
 
-Mutlikill5:addToggle("Loop Destroy Player", false, function(loopreset5)
+Mutlikill5:addToggle("Loop Reset Player", false, function(loopreset5)
     SprayPaintNotif()
     loopresetplayer5 = loopreset5
     while loopresetplayer5 do
@@ -1877,7 +1823,7 @@ Mutlikill6:addDropdown("Select Player", playerlist, function(Name6)
     targetUsername6 = Name6
 end)
 
-Mutlikill6:addToggle("Loop Destroy Player", false, function(loopreset6)
+Mutlikill6:addToggle("Loop Reset Player", false, function(loopreset6)
     SprayPaintNotif()
     loopresetplayer6 = true
     while loopresetplayer6 do
@@ -1895,7 +1841,7 @@ Mutlikill7:addDropdown("Select Player", playerlist, function(Name7)
     targetUsername7 = Name7
 end)
 
-Mutlikill7:addToggle("Loop Destroy Player", false, function(loopreset7)
+Mutlikill7:addToggle("Loop Reset Player", false, function(loopreset7)
     SprayPaintNotif()
     loopresetplayer7 = loopreset7
     while loopresetplayer7 do
@@ -1913,7 +1859,7 @@ Mutlikill8:addDropdown("Select Player", playerlist, function(Name8)
     targetUsername8 = Name8
 end)
 
-Mutlikill8:addToggle("Loop Destroy Player", false, function(loopreset8)
+Mutlikill8:addToggle("Loop Reset Player", false, function(loopreset8)
     SprayPaintNotif()
     loopresetplayer8 = loopreset8
     while loopresetplayer8 do
@@ -1931,7 +1877,7 @@ Mutlikill9:addDropdown("Select Player", playerlist, function(Name9)
     targetUsername9 = Name9
 end)
 
-Mutlikill9:addToggle("Loop Destroy Player", false, function(loopreset9)
+Mutlikill9:addToggle("Loop Reset Player", false, function(loopreset9)
     SprayPaintNotif()
     loopresetplayer9 = loopreset9
     while loopresetplayer9 do
@@ -1949,7 +1895,7 @@ Mutlikill10:addDropdown("Select Player", playerlist, function(Name10)
     targetUsername10 = Name10
 end)
 
-Mutlikill10:addToggle("Loop Destroy Player", false, function(loopreset10)
+Mutlikill10:addToggle("Loop Reset Player", false, function(loopreset10)
     SprayPaintNotif()
     loopresetplayer10 = loopreset10
     while loopresetplayer10 do
@@ -1967,7 +1913,7 @@ Mutlikill11:addDropdown("Select Player", playerlist, function(Name11)
     targetUsername11 = Name11
 end)
 
-Mutlikill11:addToggle("Loop Destroy Player", false, function(loopreset11)
+Mutlikill11:addToggle("Loop Reset Player", false, function(loopreset11)
     SprayPaintNotif()
     loopresetplayer11 = loopreset11
     while loopresetplayer11 do
@@ -1985,7 +1931,7 @@ Mutlikill12:addDropdown("Select Player", playerlist, function(Name12)
     targetUsername12 = Name12
 end)
 
-Mutlikill12:addToggle("Loop Destroy Player", false, function(loopreset12)
+Mutlikill12:addToggle("Loop Reset Player", false, function(loopreset12)
     SprayPaintNotif()
     loopresetplayer12 = loopreset12
     while loopresetplayer12 do
@@ -2060,12 +2006,3 @@ end
 wait()
 pcall(roleupdaterfix)
 end
-
-local StarterGui = game:GetService("StarterGui")
-StarterGui:SetCore("SendNotification", {
-    Title = "R3TH PRIV";
-    Text = "R3TH PRIV V2 coming out soon join for updates! https://discord.gg/pethicial";
-    Duration = 10;
-}) 
-
-print("[ R3TH PRIV ]: R3TH PRIV V2 coming out soon join for updates! https://discord.gg/pethicial")
