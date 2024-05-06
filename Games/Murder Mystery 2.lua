@@ -465,7 +465,7 @@ end)
 setreadonly(mt,true)
 
 getgenv().SheriffAim = false;
-getgenv().GunAccuracy = 25;
+getgenv().GunAccuracy = 200;
 
 local GunHook
 GunHook = hookmetamethod(game, "__namecall", function(self, ...) -------------copy code for shoot player
